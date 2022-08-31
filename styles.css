@@ -5,11 +5,74 @@
     box-sizing: border-box;
 }
 :root{
-    --tenne-twanny: #d6d6d6;
-    --tenny-twanny-dark: #b5b5b5;
+    background-color: peru;
 }
 body{
     font-weight: 300;
     font-size: 1.05rem;
     line-height: 1.6;
+    font-family: sans-serif;
+}
+.btn{
+    font-family: inherit;
+    cursor: pointer;
+    outline: 0;
+    font-size: 1.05rem;
+}
+.text{
+    opacity: 0.8;
+}
+.title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.container{
+    min-height: 100hv;
+}
+.meal-wrapper{
+    min-height: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+}
+
+.meal-search{
+    margin: 2rem 0;
+}
+.meal-search-box{
+    margin: 1.2rem 0;
+    display: flex;
+    align-items: stretch;
+}
+.meal-search cite{
+    font-size: 1rem;
+}
+.search-control,
+.search-btn{
+    width: 100%;
+}
+.search-control{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px palevioletred;
+    color: palevioletred,
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.search-control{
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background: peru;
+    color: white;
+    border: none;
+    border-top-right-radius:2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all0.45s linear;
+}
+.search-btn:hover{
+    background-color: peru;
 }
