@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root{
-    background-color: peru;
+    background-color: rgb(63, 205, 158);
 }
 body{
     font-weight: 300;
@@ -57,22 +57,98 @@ body{
     font-size: 1.1rem;
     font-family: inherit;
     outline: 0;
-    border: 1px palevioletred;
-    color: palevioletred,
+    border: 1px solid palevioletred;
+    color: palevioletred;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
-.search-control{
+.search-control::placeholder{
+    color: rgba(14, 11, 235, 0.925);
+}
+.search-btn{
     width: 55px;
     height: 55px;
     font-size: 1.8rem;
-    background: peru;
-    color: white;
+    background: rgb(200, 63, 205);
+    color: rgb(58, 45, 45);
     border: none;
     border-top-right-radius:2rem;
     border-bottom-right-radius: 2rem;
-    transition: all0.45s linear;
+    
 }
+
 .search-btn:hover{
-    background-color: peru;
+    background-color: rgb(63, 205, 127);
 }
+.meal-result{
+    margin-top: 4rem;
+}
+#meal{
+margin: 2.4rem 0;
+}
+.meal-item{
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 21px -12px rgba(0,0,0.79);
+    margin: 2rem 0;
+}
+.meal-img img{
+    width: 50%;
+    height: auto;
+    display: block;
+}
+.meal-name{
+    padding: 1.5rem o.5rem;
+}
+.meal-name h3{
+    font-size: 1.4rem;
+}
+.recipe-btn{
+    text-decoration: none;
+    color: white;
+    background-color: darkmagenta;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.75;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius:2rem;
+    transition: all 0.45s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.45 linear;
+    -ms-transition: all 0.45 linear;
+    -o-transition: all 0.45 linear;
+}
+.recipe-btn:hover{
+    background-color: aqua;
+}
+@media screen and(min-width: 600px) {
+    .meal-search-box{
+        width:540px;
+        margin-left:auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 768px){
+    #meal{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+.meal-item{
+    margin: 0;
+}
+@media screen and (min-width: 992px){
+    .meal{
+
+    }
+}
+    
+
+    
