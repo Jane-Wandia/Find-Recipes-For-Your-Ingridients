@@ -127,6 +127,51 @@ margin: 2.4rem 0;
 .recipe-btn:hover{
     background-color: aqua;
 }
+
+.meal-details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-tranform: (-50%,-50%);
+    -moz-transform:(-50%,50%);
+    -ms-transform:(-50%,-50%);
+    -o-transform:(-50%,-50%);
+    color: white;
+    background: darkmagenta;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius:1rem;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    display: ;
+}
+.meal-details::-webkit-scrollbar{
+    width: 10px;
+}
+.meal-details::-webkit-scroll-bar-thumb{
+    background-color: cadetblue;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius:2rem;
+}
+
+.showRecipe{
+    display: block;
+}
+.meal-details-content{
+    margin: 2rem;
+    
+}
+
+
+
+
 @media screen and(min-width: 600px) {
     .meal-search-box{
         width:540px;
