@@ -168,6 +168,10 @@ margin: 2.4rem 0;
     margin: 2rem;
 }
 
+.meal-details-content p{
+    padding: 1rem 0;
+}
+
 .recipe-close-btn{
     position: absolute;
     right: 2rem;
@@ -237,16 +241,6 @@ margin: 2.4rem 0;
 
 
 
-
-
-
-
-
-
-
-
-
-
 @media screen and(min-width: 600px) {
     .meal-search-box{
         width:540px;
@@ -263,6 +257,9 @@ margin: 2.4rem 0;
 }
 .meal-item{
     margin: 0;
+}
+.meal-details{
+    width: 700px;
 }
 @media screen and (min-width: 992px){
     .meal{
