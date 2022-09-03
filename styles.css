@@ -235,6 +235,14 @@ margin: 2.4rem 0;
     opacity: 0.6;
 }
 
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: darkmagenta;
+    font-size: 1,8rem;
+    font-weight: 600;
+    width: 100%;
+}
+
 
 
 
