@@ -46,9 +46,9 @@ function getMealRecipe(e){
         let mealItem = e.target.parentElement.parentElement;
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=52874`)
         .then(response =>response.json())
-        .then(data => {
-            console.log(data)
-
-        })
+        .then(data => mealRecipeModal(data.meals));
     }
 }
+
+//modal Creation
+function
