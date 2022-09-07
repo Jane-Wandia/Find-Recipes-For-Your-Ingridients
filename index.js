@@ -51,4 +51,6 @@ function getMealRecipe(e){
 }
 
 //modal Creation
-function
+function mealRecipeModal(meal){
+    
+}
