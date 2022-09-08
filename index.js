@@ -1,11 +1,14 @@
 const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
-const mealDetailsContent = document.querySelector('meal-details-content');
+const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
 //adding event listner
 searchBtn.addEventListener('click', getMealList);
 mealList.addEventListener('click', getMealRecipe);
+recipeCloseBtn.addEventListener('click', (showRecipe) => {
+    mealDetailsContent.parentElement.classList.remove('showRecipe');
+});
 
 
 //getting meal list matching the ingridients
@@ -52,5 +55,22 @@ function getMealRecipe(e){
 
 //modal Creation
 function mealRecipeModal(meal){
-    
+    console.log(meal);
+    meal = meal[0];
+    let html = `
+        <h2 class="recipe-title">${meal.strMeal}</h2>
+        <p class="recipe-category">${meal.strCategory}</p>
+        <div class="recipe-instruct">
+        <h3>Instructions</h3>
+        <p>${meal.strInstructions}</p>   
+        </div>
+        <div class="recipe-meal-img">
+        <img src="${meal.strMealThumb}" alt= "">
+        </div>
+        <div class="recipe-link">
+        <a href="#" target="_blank" >watch video</a>
+        </div>
+        `;
+        mealDetailsContent.innerHTML = html;
+        mealDetailsContent.parentElement.classList.add('showRecipe');
 }
